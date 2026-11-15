@@ -1,4 +1,4 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS
 #define _USE_MATH_DEFINES
 #include <stdio.h>
 #include <math.h>
@@ -15,15 +15,15 @@ int main() {
 
     double sum_cos = 0.0;
     double sum_sin = 0.0;
-    double product = 1.0;
+    double proizvedenie = 1.0;
 
     for (int i = 1; i <= N; i++) {
         sum_cos += cos(i);
         sum_sin += sin(i);
-        product *= (sum_cos / sum_sin);
+        proizvedenie *= (sum_cos / sum_sin);
     }
 
-    printf("Результат произведения: %lf\n", product);
+    printf("Результат произведения: %lf\n", proizvedenie);
 
     return 0;
 }
